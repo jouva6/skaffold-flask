@@ -41,7 +41,7 @@ spec:
             - >
 
               pip3 install flask &&
-              python3 -c "from flask impot Flask;
+              python3 -c "from flask import Flask;
 
 
               app = Flask(__name__)
