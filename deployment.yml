@@ -41,7 +41,7 @@ spec:
             - >
 
               pip3 install flask &&
-              python3 -c "from flask import Flask;
+              python3 -c "from flask import Flask, jsonify;
 
 
               app = Flask(__name__)
@@ -53,6 +53,12 @@ spec:
               def home():
 
                   return '<h1>Hello Flask V1</h1>'
+
+              @app.route('/status')
+
+              def status():
+
+                  return jsonify(status='running', version='V2')
 
 
 
