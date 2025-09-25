@@ -52,7 +52,7 @@ spec:
 
               def home():
 
-                  return '<h1>Hello Flask V1</h1>'
+                  return '<h1>Hello Flask V2</h1>'
 
               @app.route('/status')
 
